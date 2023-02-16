@@ -1,11 +1,18 @@
 def trip_calculator():
+    # Gets driver's name
     driver_name = input("What is your name: ").capitalize()
+
+    # variables for later use
     cost_total = 0
     total_time = 0
     average_cost = 0
     average_time = 0
     trips = 0
+
+    # ends the while loop
     null = 1
+
+    # while the user wants to start a new trip the trip time is asked and variables are calculated
     while null == 1:
         do_you_want_to_start_a_new_trip = input(
             "Do you want to START A NEW TRIP: ").upper()
@@ -14,8 +21,8 @@ def trip_calculator():
             cost_total = cost_total + trip_time * 2 + 10
             total_time = total_time + trip_time
             trips = trips + 1
-            null = 1
 
+        # calculates the averages for cost and time then prints the details of the driver
         elif do_you_want_to_start_a_new_trip == "NO":
             average_cost = cost_total / trips
             average_time = total_time / trips
