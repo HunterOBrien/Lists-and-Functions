@@ -3,7 +3,7 @@ nameDict = {
             }
 
 
-def abs():
+def absences():
     null = 1
     while null == 1:
         absence = input("Do you want to record a Absence? (yes or $ "
@@ -25,7 +25,7 @@ def abs():
             null = 0
 
 
-abs()
+absences()
 
 
 
