@@ -23,11 +23,13 @@ def absences():
             abs_days_ave = sum(nameDict.values()) / len(nameDict.values())
             name_most_days_abs = max(nameDict.values())
 
-            abs_days_none = 
+            abs_days_none = [zero_days_abs[0] for zero_days_abs in nameDict]
+            print(abs_days_none)
 
             print(f"The average number of days of absences is "
                   f"{abs_days_ave:.2f} days")
-            print("The person with the mot days absent is: ",
+            # Gets the key for the person with the most days absent from the value and prints
+            print("The person with the most days absent is: ",
                   list(nameDict.keys())
                   [list(nameDict.values()).index(name_most_days_abs)])
 
